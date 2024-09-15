@@ -5,8 +5,8 @@ from datetime import datetime, timedelta
 def generate_data(n, low, high):
     return np.random.randint(low, high + 1, n)
 
-num_records = 2880  # number of records for 8 hours at 10-second intervals
-num_patients = 5
+num_records = 360  # number of records for an hour at 10-second intervals
+num_patients = 2
 
 # Time settings for simulation
 start_time = datetime.now()
@@ -41,6 +41,6 @@ for patient_id in range(1, num_patients + 1):
     })
 
     # Save to CSV
-    file_name = f'Patient_{patient_id}_data.csv'
+    file_name = f'Patient{patient_id}_data.csv'
     patient_data.to_csv(file_name, index=False)
     print(f'Data for Patient {patient_id} saved to {file_name}')
