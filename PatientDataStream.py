@@ -21,10 +21,28 @@ def stream_csv_to_kinesis(file_path, patient_id):
             Data=json.dumps(data),
             PartitionKey=patient_id
         )
-        time.sleep(0.1)  # Adding a small delay to simulate streaming
+        time.sleep(10)  # Adding a small delay to simulate streaming
+
+# def stream_csv_to_kinesis(file_path, patient_id):
+#     df = pd.read_csv(file_path)
+#     df['patient_id'] = patient_id
+
+#     # Convert DataFrame rows to list of dictionaries
+#     records = df.to_dict(orient='records')
+
+#     for record in records:
+#         # Send the data to Kinesis
+#         kinesis_client.put_record(
+#             StreamName=stream_name,
+#             Data=json.dumps(record),
+#             PartitionKey=str(patient_id)
+#         )
+#         time.sleep(0.1)  # Adding a delay to simulate streaming
+#         print(f"Sent record: {record}")
+
 
 # Directory containing the CSV files
-data_directory = '/Users/soumyavoorugonda/DataScience/Projects/Anesthetic Patient Monitoring and Alerting Pipeline/Anesthetic-Patient-Monitoring-and-Alerting-Pipeline/PatientData'
+data_directory = '/Users/soumyavoorugonda/DataScience/Projects/Anesthetic Patient Monitoring and Alerting Pipeline/Anesthetic-Patient-Monitoring-and-Alerting-Pipeline'
 
 # Iterate over each file in the directory and stream the data
 for filename in os.listdir(data_directory):

@@ -6,7 +6,7 @@ def generate_data(n, low, high):
     return np.random.randint(low, high + 1, n)
 
 num_records = 360  # number of records for an hour at 10-second intervals
-num_patients = 2
+num_patients = 3
 
 # Time settings for simulation
 start_time = datetime.now()
@@ -19,9 +19,9 @@ for patient_id in range(1, num_patients + 1):
         'Time': time_series,
         'RelativeTimeMilliseconds': relative_time_milliseconds,
         'HR': generate_data(num_records, 60, 100),
-        'NBP Sys': generate_data(num_records, 100, 140),
-        'NBP Dia': generate_data(num_records, 60, 90),
-        'NBP Mean': generate_data(num_records, 70, 110),
+        'sysNBP': generate_data(num_records, 100, 140),
+        'diaNBP': generate_data(num_records, 60, 90),
+        'meanNBP': generate_data(num_records, 70, 110),
         'Pulse': generate_data(num_records, 60, 100),
         'SpO2': generate_data(num_records, 85, 100),
         'etCO2': generate_data(num_records, 25, 52),
