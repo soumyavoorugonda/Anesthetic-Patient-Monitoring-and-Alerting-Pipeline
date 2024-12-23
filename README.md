@@ -15,14 +15,14 @@ To replicate real-time data streaming for this pipeline, I employed a Python sim
 - Amazon Athena
 - VS Code
 
-### Real-time Anesthesia Monitoring and Alerting Pipeline Architecture
+### Real-time Anesthesia Monitoring and Alerting Pipeline Architecture:
 
 ![Blank diagram (1)](https://github.com/user-attachments/assets/ea00c57a-35b1-4e56-ba7f-7cf365588610)
 
 
 
 
-### Alerting
+### Alerting:
 The real-time patient monitoring was successfully streamed, with notifications sent to subscribers via email.
 
 
