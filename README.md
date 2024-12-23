@@ -1,6 +1,6 @@
 # Anesthetic-Patient-Monitoring-and-Alerting-Pipeline
 ### Objective: 
-The primary objective of this project is to develop a real-time anesthesia monitoring pipeline designed to enhance patient safety and support clinical decision-making during surgical procedures. The pipeline will feature a dynamic dashboard that updates every 10 seconds, providing up-to-date readings of critical vital signs such as heart rate, blood pressure, oxygen saturation, and end-tidal CO2. It will also include an alert mechanism to promptly notify medical staff of any deviations from normal ranges, ensuring immediate attention to potential emergencies.
+The primary objective of this project is to develop a real-time anesthesia monitoring pipeline designed to enhance patient safety and support clinical decision-making during surgical procedures. The pipeline will feature a dynamic dashboard and an alert mechanism to promptly notify medical staff of any deviations from normal ranges, ensuring immediate attention to potential emergencies.
 
 ### Dataset:
 To replicate real-time data streaming for this pipeline, I employed a Python simulation script utilizing the [University of Queensland Vital Signs Dataset](https://outbox.eait.uq.edu.au/uqdliu3/uqvitalsignsdataset/index.html). This approach effectively mimics the dynamics of real-time data flow.
