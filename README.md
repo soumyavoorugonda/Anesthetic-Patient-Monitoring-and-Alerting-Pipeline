@@ -7,8 +7,12 @@ To replicate real-time data streaming for this pipeline, I employed a Python sim
 
 ### Tools & Services used:
 - AWS Kinesis Data Streams
+- Amazon Data Firehose
+- Amazon S3
 - AWS Lambda
-- AWS SNS
+- Amazon SNS
+- AWS Glue
+- Amazon Athena
 - VS Code
 
 ### Real-time Anesthesia Monitoring and Alerting Pipeline Architecture
