@@ -17,6 +17,8 @@ To replicate real-time data streaming for this pipeline, I employed a Python sim
 
 ### Real-time Anesthesia Monitoring and Alerting Pipeline Architecture
 
+![Blank diagram (1)](https://github.com/user-attachments/assets/ea00c57a-35b1-4e56-ba7f-7cf365588610)
+
 
 
 
